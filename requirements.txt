@@ -1,1 +1,1 @@
--U pytest
+- -U pytest
