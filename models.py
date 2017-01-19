@@ -9,7 +9,7 @@ Base = declarative.declarative_base()
 class login(Base):
     __tablename__ = "login"
     
-    username = sa.Column(sa.Unicode(100), nullable=False)
+    username = sa.Column(sa.Unicode(100), nullable=False, primary_key=True)
     password = sa.Column(sa.Unicode(100), nullable=False)
     
     def __init__(self, username, password):
