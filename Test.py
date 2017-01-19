@@ -4,4 +4,4 @@ def addition(a, b):
 def test_numbers_3_4():
     assert addition(2,3) == 5
     assert addition(5,6) == 11
-    assert addition (9,0) == 10
+    assert addition (9,0) == 9
