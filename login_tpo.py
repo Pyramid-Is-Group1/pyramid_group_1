@@ -13,9 +13,8 @@ def user_view(request):
 
 def find_user(request, uid):
     return request.db.query(User).filter_by(id=uid).first()
-    
-    
-    class Test_user_view(unittest.TestCase):
+        
+class Test_user_view(unittest.TestCase):
     def test_it(self):
         req = DummyRequest()
         req.db = DummyDB()
