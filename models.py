@@ -17,7 +17,7 @@ class login(Base):
         self.password = password
     
 class Student(Base):
-    __tablename__ = "login"
+    __tablename__ = "student"
 
     student_id = sa.Column(sa.Integer, primary_key=True)
     student_name = sa.Column(sa.Unicode(100), nullable=False)
@@ -38,7 +38,7 @@ class Student(Base):
         
         
 class Faculty(Base):
-    __tablename__ = "login"
+    __tablename__ = "Faculty"
 
     Faculty_id = sa.Column(sa.Integer, primary_key=True)
     Faculty_name = sa.Column(sa.Unicode(100), nullable=False)
