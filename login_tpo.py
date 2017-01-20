@@ -8,7 +8,7 @@ def user_view(request):
     uid = request.matchdict['uid']
     user = find_user(request, uid)
     if user is None:
-        raise HTTPNotFound
+        raise HTTPNotFound;
     return {'user': user}
 
 def find_user(request, uid):
