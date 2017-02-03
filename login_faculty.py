@@ -1,17 +1,13 @@
 class login:
-    def __init__(self,id,pas):
-        self.id="faculty"
-        self.pas="faculty"
+    def __init__(self, id, pas):
+        self.id = id
+        self.pas = pas
 
-    def check(id,pas):
+    def check(self, id, pas):
         print self.id
-        print lod.id
-        if(self.id==log.id and self.pas==log.pas):
+        if self.id == id and self.pas == pas:
             print "Login success!"
 
-
-log=login("","")
+log = login("admin", "admin")
 log.check(raw_input("Enter Login ID:"),
-        input("Enter password: "))
-
-print "Login Page" 
+          raw_input("Enter password: "))
