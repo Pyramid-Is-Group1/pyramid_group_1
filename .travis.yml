@@ -5,7 +5,7 @@ python:
 install:
     - pip install -U pytest
     - pip install -r requirements.txt
-    - pip install -e ".[testing]"
+    - pip install -e .
     
 # command to run tests
 script: 
